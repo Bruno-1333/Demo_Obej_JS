@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Formulaire</title>
+    <script src="main.js"></script>
 </head>
 <body>
 
 <form>
+    <h1>Formulaire de création d'employés</h1>
+
   <label> Nom <input type="text" name="nom" id="nom"></label><br>
   <label> Prenom <input type="text" name="prenom" id="prenom"></label><br>
-  <label> Age <input type="text" name="age" id="age"></label><br>
+  <label> Age <input type="range" name="age" id="age" max="120"></label><br>
   <label> Date de naisssance <input type="date" name="date" id="date"></label><br>
   <input type="button" value="Créer l'employé" onclick="creerEmployer()">
-  <p id="employe"></p>
+    <div id="employe"></div>
 </form>
 
 </body>
